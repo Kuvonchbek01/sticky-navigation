@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap);
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.active{
+    color: tomato !important;
+}
+
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.5s ease;
+    z-index: 100;
+}
+
+.site-header.white-header{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.site-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    text-align: center;
+    transition: border 0.3s;
+}
+
+.site-header.white-header .site-logo{
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.site-logo:hover{
+    opacity: 0.8;
+}
+
+.site-logo:active{
+    opacity: 0.6;
+}
+
+.site-logo-img {
+    width: 75px;
+    height: auto;
+    display: flex;
+
+}
+
+.sitenav {
+}
+
+.sitenav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.sitenav-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    font-size: 22px;
+}
+
+.site-header.white-header .sitenav-link{
+    color: #000;
+}
+
+.site-header.white-header .sitenav-link:hover{
+    color: tomato;
+}
+
+
+.sitenav-link:hover{
+    color: tomato;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: rgb(226, 198, 198);
+}
+
+.hero{
+    height: 100vh;
+    background-image: url('./ivan-diaz-YOy-ek-aBR0-unsplash.jpg');
+    background-position: left 32% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.hero-container{
+    position: relative;
+}
+
+.hero-title {
+    font-family: 'Just Another Hand', display;
+    letter-spacing: 10px;
+    font-size: 100px;
+    font-weight: 400;
+    color: #AB5D59;
+    font-style: italic;
+}
+
+.hero-text {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 270px;
+    top: 200px;
+    font-style: italic;
+}
+
+.features {
+    padding-bottom:100px;
+}
+
+.features-action{
+}
+
+.features-item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.features-item:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.features-item img{
+    margin-right: 30px;
+    border-radius: 15px;
+}
+
+.features-heading {
+}
+
+.features-text {
+}
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #666; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+  }
