@@ -142,6 +142,7 @@ body {
 
 .hero-container{
     position: relative;
+    text-align: center;
 }
 
 .hero-title {
@@ -151,11 +152,11 @@ body {
     font-weight: 400;
     color: #AB5D59;
     font-style: italic;
+    margin-bottom: 30px;
 }
 
 .hero-text {
     color: rgb(0, 0, 0);
-    position: absolute;
     left: 270px;
     top: 200px;
     font-style: italic;
@@ -189,6 +190,23 @@ body {
 }
 
 
+
+@media (max-width:1000px) {
+    .features-item{
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width:500px) {
+    .hero-text{
+        color: rgb(121, 16, 16);
+        font-weight: 700;
+    }
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 
 
 
