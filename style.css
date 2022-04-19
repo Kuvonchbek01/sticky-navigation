@@ -152,7 +152,7 @@ body {
     font-weight: 400;
     color: #AB5D59;
     font-style: italic;
-    margin-bottom: 30px;
+    margin-bottom:25px;
 }
 
 .hero-text {
@@ -196,6 +196,14 @@ body {
         display: block;
         text-align: center;
     }
+
+    .features-item img{
+        margin-right: 0px;
+    }
+
+    .features-text{
+        text-align: justify;
+    }
 }
 @media (max-width:500px) {
     .hero-text{
@@ -205,6 +213,15 @@ body {
     .container{
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .site-logo{
+        padding: 0;
+    }
+    .site-logo-img{
+        width: 60px;
+    }
+    .sitenav-link{
+        font-size: 19px;
     }
 }
 
